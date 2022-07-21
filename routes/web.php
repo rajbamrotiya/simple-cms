@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+Route::get('/', \App\Http\Livewire\PageTree::class);
+Route::get('/page', \App\Http\Livewire\ShowPages::class);
+Route::get('/page/add', \App\Http\Livewire\CreatePage::class);
+Route::get('/page/edit/{page}', \App\Http\Livewire\EditPage::class);
