@@ -17,7 +17,8 @@ class CreatePage extends Component
             'required',
             'string',
             'max:100',
-            'unique:App\Models\Page,slug'
+            'unique:App\Models\Page,slug',
+            'not_in:page,add,edit'
         ],
         'page.content' => 'required',
     ];

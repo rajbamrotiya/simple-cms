@@ -25,6 +25,7 @@ class EditPage extends Component
             'required',
             'string',
             'max:100',
+            'not_in:page,add,edit'
         ],
         'page.content' => 'required',
     ];

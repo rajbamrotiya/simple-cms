@@ -36,4 +36,9 @@
     cd your-project-root-path
     php artisan serve
     ```
-  
+## Project Clarification
+* When we adding or editing page below slug are not allowed 
+    ```markdown
+    page,add,edit
+    ```
+* I don't put out any validation or warning for deleting parent page if they have any children. 
